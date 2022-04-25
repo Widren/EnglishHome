@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnglishHome.Views.Adres"
+             Shell.NavBarIsVisible="False" >
+    <ContentPage.Content>
+        <StackLayout >
+            <Frame HeightRequest="35" WidthRequest="372" HorizontalOptions="Center" BackgroundColor="DodgerBlue">
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton x:Name="Geri" Clicked="Geri_Clicked"   BackgroundColor="Transparent" Source="previous.png">
+                    </ImageButton>
+                    <Label TextColor="AliceBlue" FontAttributes="Bold" FontSize="20" Text="Geri"></Label>
+                </StackLayout>
+            </Frame>
+            <ScrollView>
+                <StackLayout Margin="15">
+            <Frame Margin="15">
+                <Label Text="Adres Güncelleme" TextColor="Black" FontSize="20"></Label>
+            </Frame>
+            <Label Text="Başlık*" TextColor="Black"></Label>
+            <Entry Placeholder="örneğin:ev,iş..."></Entry>
+            <Label Text="Ad*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="Soyad*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="Cep Telefonu*" TextColor="Black"></Label>
+            <Entry Keyboard="Telephone"></Entry>
+            <Label Text="İl*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="İlçe*" TextColor="Black"></Label>
+            <Entry Keyboard="Text"></Entry>
+            <Label Text="Adres*" TextColor="Black"></Label>
+            <Entry Placeholder="mahalle ,sokak,apartman adı ve numarası gibi diğer adres bilgilerinizi eksiksiz giriniz " Keyboard="Text"></Entry>
+            <Label Text="Posta Kodu" TextColor="Black"></Label>
+            <Entry Keyboard="Numeric"></Entry>
+            <Button Text="KAYDET VE DEVAM ET" BackgroundColor="MidnightBlue" TextColor="White" HorizontalOptions="Center" Clicked="Button_Clicked_1" ></Button>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

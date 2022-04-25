@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell FlyoutIcon="menu.png" FlyoutBackgroundColor="AliceBlue"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EnglishHome.Views"
+             x:Class="EnglishHome.PageShell">
+
+
+    <FlyoutItem Title="Anasayfa" Icon="home.png">
+        <ShellContent Route="PageMain" ContentTemplate="{DataTemplate local:PageMain}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Giriş Yap / Üye Ol" Icon="user.png">
+        <ShellContent Route="PageGiris" ContentTemplate="{DataTemplate local:PageGiris}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Sepet" >
+        <ShellContent Route="PageSepet" ContentTemplate="{DataTemplate local:PageSepet}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Tüm Ürünler"  >
+        <ShellContent Route="TumUrunler" ContentTemplate="{DataTemplate local:TumUrunler}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Kategoriler"  >
+        <ShellContent Route="PageCategory" ContentTemplate="{DataTemplate local:PageCategory}" />
+    </FlyoutItem>
+  
+   
+   
+
+
+
+
+
+
+</Shell>
+    

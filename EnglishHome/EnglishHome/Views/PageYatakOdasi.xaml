@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnglishHome.Views.PageYatakOdasi"
+             Title="YATAK ODASI">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  IconImageSource="home.png" Order="Primary" Priority="0" Clicked="ToolbarItem_Clicked"   ></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content >
+
+
+        <ListView SelectionMode="Single"  BackgroundColor="AliceBlue" x:Name="lstView" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="10" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                                <ImageButton BackgroundColor="AliceBlue" HeightRequest="200" WidthRequest="250" Source="{Binding image}"></ImageButton>
+                                
+                            <StackLayout  Margin="5,0,0,5" HorizontalOptions="Center" VerticalOptions="Center" Orientation="Vertical">
+                                <Label TextColor="DarkSlateBlue" BackgroundColor="Transparent" WidthRequest="100" Text="{Binding urun}"></Label>
+                                <Label  HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="DarkSlateBlue" Text="{Binding fiyat}"></Label>
+                                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                                    <Label Text="Renk:" FontAttributes="Bold" TextColor="DarkSlateBlue" HorizontalTextAlignment="Center"></Label>
+                                    <Label Text="{Binding renk}"  FontAttributes="Bold" TextColor="DarkSlateBlue" HorizontalTextAlignment="Center"></Label>
+                                </StackLayout>
+                                
+                                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                                    <Image WidthRequest="15" HeightRequest="15" Source="star.png" HorizontalOptions="Center"></Image>
+                                    <Label Text="{Binding rating}" FontAttributes="Bold" TextColor="DarkSlateBlue" ></Label>
+                                </StackLayout>
+
+
+                            </StackLayout>
+                         </StackLayout>
+                         
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+          
+       
+    </ContentPage.Content>
+</ContentPage>
