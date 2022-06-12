@@ -18,7 +18,7 @@ namespace EnglishHome.Views
         {
             InitializeComponent();
             
-    }
+        }
         public ObservableCollection<Urunler> SepeteEklenen { get; set; }
         private void AddToCart()
         {

@@ -12,12 +12,11 @@
         <StackLayout Orientation="Horizontal">
             <SearchBar TextChanged="Handle_TextChanged"/>
         </StackLayout>
-        <ListView x:Name="MyListView"
+            <ListView x:Name="MyListView"
             ItemsSource="{Binding Products}"
             HasUnevenRows="True"
              >
-             
-            <ListView.ItemTemplate>
+                <ListView.ItemTemplate>
                 <DataTemplate x:DataType="vme:Urunler">
                     <ViewCell>
                         <Grid Padding="7">

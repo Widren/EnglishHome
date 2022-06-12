@@ -8,12 +8,10 @@ namespace EnglishHome.ViewModels
     class CategoryViewModel
     {
         public ObservableCollection<Category> Category { get; set; }
-        public List<Category> Cat { get; set; }
         public CategoryViewModel()
         {
            
             Category = new ObservableCollection<Category>();
-            Cat = new List<Category>();
 
             Category.Add(new Category { CategoryIcon = "bed.png", CategoryTitle = "Yatak Odası" });
             Category.Add(new Category { CategoryIcon = "kitchen.png", CategoryTitle = "Mutfak" });

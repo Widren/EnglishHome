@@ -8,7 +8,6 @@
         <vm:ProductViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
-
         <ListView x:Name="MyListView"
             ItemsSource="{Binding Products}"
             HasUnevenRows="True"
